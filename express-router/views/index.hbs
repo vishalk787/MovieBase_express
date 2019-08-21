@@ -1,0 +1,28 @@
+
+<section class="top">
+            <h1 id="top">MovieBase</h1>        
+        </section>
+
+        <section class="middle">
+
+            <div class="list"> </div>
+    
+              {{#each data }} 
+                <div class="column">
+                <div class="image" > 
+                  <a href="http://localhost:3000/details/{{this.id}}">
+                  <img id="image" src=" https://image.tmdb.org/t/p/w342/{{this.poster_path}} ">
+                  </a>
+                </div>
+                <div class="name" > 
+                  {{ this.title }} 
+                  <div class="scr">
+                  {{this.vote_average}}
+                </div>
+                </div>
+                
+              </div>
+              {{/each}}
+             
+        </section>
+    </main>

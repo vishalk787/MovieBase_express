@@ -1,0 +1,31 @@
+<main>
+
+    <section class="top">
+         <h1 id="top">MovieBase</h1>        
+    </section>
+
+        <section class="middle">
+
+            <div>
+                <img id="detailsImg" src="https://image.tmdb.org/t/p/w342/{{data.poster_path}} " >
+                    <div>
+                        <h1 id="title">
+                           {{ data.title}}
+                        </h1>
+                        <div >
+                            <h2 id="score">
+                                Score - {{data.vote_average}}
+                            </h2>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p id="overview">
+                            Overview :
+                           <p id="overview"> {{data.overview}} </p>
+                        </p>
+                    </div>
+            </div>
+             
+    </section>
+</main>
